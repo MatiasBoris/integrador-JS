@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script> <!-- Asegúrate de que el script se cargue después del DOM -->
+    <link rel="icon" href="/imagenes/icono_BX.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+
+    <!-- Imagen del logo -->
+    <div class="logo-container">
+        <img src="/imagenes/logo_BX.png" alt="Logo" class="logo">
+    </div>
+
+    <nav>
+        <ul class="nav-container">
+            <!-- Buscador -->
+             <li>
+                <input type="text" id="search" placeholder="Buscar..." class="search-input">
+             </li>
+ 
+    
+            <!-- Botón del menú hamburguesa -->
+            <li id="hamburger" class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </li>
+    
+            <!-- Enlaces de navegación -->
+            <li id="nav-links" class="nav-links">
+                <a href="#about">About Us</a>
+                <a href="#services-container">Servicios</a>
+                <a href="#contact">Contacto</a>
+                <a href="#">Mi Cuenta</a>
+            </li>
+    
+                <!-- Carrito -->
+            <li id="cart-button" style="cursor: pointer;" onclick="toggleCart()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path fill="#2a212b" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                </svg>
+            </li>
+
+                <!-- Contenedor del carrito -->
+            <li id="cart-container" class="section" style="display: none;">
+                <h2>Contenido del Carrito</h2>
+            </li>
+
+
+
+        </ul>
+    </nav>
+
+
+</header>
+
+<section class="hero">
+    <h2>¡Sube de Nivel Rápido y Sin Esfuerzo!</h2>
+</section>
+
+<section id="about" class="section">
+    <h2>SOBRE NOSOTROS</h2>
+    <p>En BoostXpert, somos un equipo apasionado de jugadores y profesionales comprometidos a ofrecer los mejores servicios de boosting para aquellos que buscan mejorar su experiencia en videojuegos. Sabemos lo importante que es alcanzar tus metas en tus juegos favoritos, ya sea subir de nivel, mejorar tu rango o simplemente superar un desafío difícil.</p>
+    <p>Nos especializamos en proporcionar servicios personalizados que te ayudan a alcanzar tus objetivos de manera rápida y segura. Con años de experiencia y un equipo de expertos altamente capacitados, garantizamos un servicio confiable y de alta calidad. Nuestro enfoque está centrado en la satisfacción del cliente, asegurándonos de que cada uno de nuestros usuarios reciba una experiencia única y satisfactoria.</p>
+    <p>Ya sea que busques escalar en las clasificaciones o superar obstáculos en tu camino, en BoostXpert te ayudamos a alcanzar el siguiente nivel. ¡Deja que los profesionales hagan el trabajo por ti y disfruta del juego sin preocupaciones!</p>
+</section>
+
+<section id="features" class="section">
+    <h2>¿POR QUÉ ELEGIRNOS?</h2>
+    <ul class="card-container">
+        <li class="card">
+            <h3>Jugadores Profesionales</h3>
+            <p>🏆</p>
+            <p>Contamos con boosters de alto nivel, jugadores profesionales y top en sus regiones, asegurando un winrate alto y resultados rápidos.</p>
+        </li>
+        <li class="card">
+            <h3> Seguridad Garantizada</h3>
+            <p>🔒</p>
+            <p>Utilizamos VPNs seguras y métodos discretos para evitar sanciones. Además, nunca compartimos tu información personal.</p>
+        </li>
+        <li class="card">
+            <h3>Rápido y</h3>
+            <h3>Eficiente</h3>
+            <p>⚡</p>
+            <p>Ofrecemos entregas rápidas y sin interrupciones, con soporte 24/7 y seguimiento en tiempo real del progreso de tu cuenta.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="services-container" class="section">
+    <h2>SERVICIOS DE BOOSTING</h2>
+    <br>
+    <div>
+        <label for="category-filter">Filtrar por categoría:</label>
+        <select id="category-filter">
+            <option value="all" selected>Todos</option> <!-- Opción predeterminada -->
+            <option value="Boost">Boost</option>
+            <option value="Cuenta">Cuenta</option>
+            <option value="Heroe">Héroe</option>
+        </select>
+    </div>
+    <div id="services-list">
+        <!-- Aquí se renderizarán los servicios -->
+    </div>
+</section>
+
+
+<section id="contact" class="section">
+    <h2>CONTACTO</h2>
+    <form id="contact-form">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <div id="form-message" style="color: red; margin-top: 10px;"></div> <!-- Mensaje de error o éxito -->
+</section>
+
+<footer>
+    <p>&copy; BoostXpert 2025. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
