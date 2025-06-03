@@ -337,6 +337,18 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 
+// Nuevo código agregado para cerrar el menú hamburguesa al hacer clic en un enlace
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.getElementById('nav-links');
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active'); // Cerrar menú cuando se hace clic en un enlace
+        });
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     renderServices(services); // Renderizar todos los servicios al cargar la página
 });
