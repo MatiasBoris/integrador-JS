@@ -114,11 +114,11 @@ nav a {
 
 
 #cart-container {
-    font-size: 0.9rem; /* Reduce font size inside cart */
+    font-size: 10px; /* Reduce font size inside cart */
 }
 #cart-container h4,
 #cart-container p {
-    font-size: 0.85rem; /* Even smaller for headings and paragraphs */
+    font-size: 12px; /* Even smaller for headings and paragraphs */
 }
 
 .cart-item {
