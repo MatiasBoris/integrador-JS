@@ -66,6 +66,9 @@ nav {
     justify-content:space-around; /* Espacio entre elementos */
     align-items: center; /* Centrar verticalmente */
 }
+.nav-container h2{
+    font-size: 12px;
+}
 
 .search-input {
     padding: 5px; /* Espaciado interno del buscador */

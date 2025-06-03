@@ -239,7 +239,7 @@ function updateCartDisplay() {
     cartContainer.innerHTML = ''; // Limpiar el contenedor
 
     if (cart.length === 0) {
-        cartContainer.innerHTML = '<p>El carrito está vacío.</p>';
+        cartContainer.innerHTML = '<p>Tu carrito está vacío.</p>';
         return;
     }
 
