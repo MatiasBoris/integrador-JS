@@ -33,7 +33,7 @@ const services = [
         category: "Boost"
     },
     {
-        title: "Boosting Mitico → Mitico Honorario",
+        title: "Boosting Mitico → Honorario",
         description: "Para los jugadores que han alcanzado Mitico y buscan superar el límite para llegar a Mitico Honorario. Este es un rango muy alto y exclusivo que muestra el nivel más alto de habilidad en Mobile Legends.",
         features: [
             "Estimado de: 5-10 días.",
@@ -42,7 +42,7 @@ const services = [
         category: "Boost"
     },
     {
-        title: "Boosting Mitico Honorario → Mitico Inmortal",
+        title: "Boosting Honorario → Inmortal",
         description: "Este servicio está diseñado para aquellos jugadores que han alcanzado Mitico Honorario y desean llegar al nivel aún más exclusivo de Mitico Inmortal. Un nivel de prestigio que solo unos pocos logran alcanzar.",
         features: [
             "Estimado de: 7-14 días.",
@@ -51,7 +51,7 @@ const services = [
         category: "Boost"
     },
     {
-        title: "Boosting Mitico Inmortal → Mitico Inmortal +200",
+        title: "Boosting Inmortal → Inmortal +200",
         description: "Este servicio está dirigido a los jugadores que ya han alcanzado Mitico Inmortal y desean mejorar su clasificación con +200 Estrellas. Esta es una opción premium para quienes buscan la distinción máxima en el juego y desean mantenerse en la cima del rendimiento.",
         features: [
             "Estimado de: 10-15 días.",

@@ -112,6 +112,15 @@ nav a {
     overflow-y: auto; /* Habilitar el desplazamiento vertical */
 }
 
+
+#cart-container {
+    font-size: 0.9rem; /* Reduce font size inside cart */
+}
+#cart-container h4,
+#cart-container p {
+    font-size: 0.85rem; /* Even smaller for headings and paragraphs */
+}
+
 .cart-item {
     margin: 10px 0;
     padding: 10px;
