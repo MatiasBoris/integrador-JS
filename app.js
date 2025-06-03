@@ -51,7 +51,7 @@ const services = [
         category: "Boost"
     },
     {
-        title: "Boosting Inmortal → Inmortal +200",
+        title: "Boosting Inmortal → +100",
         description: "Este servicio está dirigido a los jugadores que ya han alcanzado Mitico Inmortal y desean mejorar su clasificación con +200 Estrellas. Esta es una opción premium para quienes buscan la distinción máxima en el juego y desean mantenerse en la cima del rendimiento.",
         features: [
             "Estimado de: 10-15 días.",
